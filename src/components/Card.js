@@ -27,10 +27,13 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
 
   const addToList = async () => {
     try {
-      await axios.post("https://joyous-gaiters-pig.cyclic.app/api/user/add", {
-        email,
-        data: movieData,
-      });
+      await axios.post(
+        "https://weak-gold-panther-toga.cyclic.app/api/user/add",
+        {
+          email,
+          data: movieData,
+        }
+      );
     } catch (error) {
       console.log(error);
     }

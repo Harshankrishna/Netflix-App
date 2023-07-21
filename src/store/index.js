@@ -39,7 +39,7 @@ export const getUsersLikedMovies = createAsyncThunk(
     const {
       data: { movies },
     } = await axios.get(
-      `https://joyous-gaiters-pig.cyclic.app/api/user/liked/${email}`
+      `https://weak-gold-panther-toga.cyclic.app/api/user/liked/${email}`
     );
     return movies;
   }
@@ -93,7 +93,7 @@ export const removeMovieFromLiked = createAsyncThunk(
     const {
       data: { movies },
     } = await axios.put(
-      "https://joyous-gaiters-pig.cyclic.app/api/user/remove",
+      "https://weak-gold-panther-toga.cyclic.app/api/user/remove",
       {
         email,
         movieId,
