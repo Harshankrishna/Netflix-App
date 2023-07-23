@@ -46,6 +46,7 @@ top: 0;
       margin-left: 50rem;
     }
   .body {
+    width: 100vw;
     gap: 2rem;
     .text {
      display: flex;

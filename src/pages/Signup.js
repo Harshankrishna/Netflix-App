@@ -93,6 +93,10 @@ function Signup() {
 }
 
 const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   position: relative;
   .content {
     position: absolute;
@@ -104,8 +108,10 @@ const Container = styled.div`
     display: grid;
     grid-template-rows: 15vh 85vh;
     .body {
+      width: 100vw;
       gap: 2rem;
       .text {
+        display: flex;
         gap: 1rem;
         text-align: center;
         font-size: 1.5rem;
@@ -115,17 +121,19 @@ const Container = styled.div`
         }
       }
       .form {
-        display: grid;
+        display: flex;
         grid-template-columns: ${({ showPassword }) =>
           showPassword ? "1fr 1fr" : "2fr 1fr"};
         width: 60%;
+        flex-direction: column;
+        justify-content: center;
         input {
           color: white;
           margin-left: 1rem;
+          margin-bottom: 1rem;
           padding: 1.5rem 2rem;
           font-size: 1.2rem;
           border: 1px solid white;
-
           background-color: rgba(0, 0, 0, 0.5);
           background-color: #000000b0;
           &:focus {

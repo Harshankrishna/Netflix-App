@@ -72,6 +72,7 @@ function Netflix() {
 const Container = styled.div`
   background-color: black;
   .hero {
+    display: flex;
     position: relative;
     .background-image {
       filter: brightness(60%);

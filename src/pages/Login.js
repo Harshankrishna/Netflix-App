@@ -75,7 +75,7 @@ const Container = styled.div`
       .form {
         padding: 2rem;
         background-color: #000000b0;
-        width: 25vw;
+
         gap: 2rem;
         color: white;
         .container {
